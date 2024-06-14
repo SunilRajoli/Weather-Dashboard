@@ -8,6 +8,10 @@ const WeatherDisplay = ({ weatherData, forecastData }) => {
     setIsCelsius((prev) => !prev);
   };
 
+  const formatDateTime = (timestamp) => {
+    return new Date(timestamp * 1000).toLocaleString(); // Convert Unix timestamp to readable date and time
+  };
+
   if (!weatherData) return <div>No weather data available</div>;
 
   const temperatureUnit = isCelsius ? '°C' : '°F';
@@ -25,6 +29,7 @@ const WeatherDisplay = ({ weatherData, forecastData }) => {
           <div key={index} className={styles.forecastDay}>
             <p>{new Date(day.dt_txt).toLocaleDateString()}</p>
             <p>Temp: {isCelsius ? day.main.temp : (day.main.temp * 9/5 + 32).toFixed(2)} {temperatureUnit}</p>
+            <p>Report: {formatDateTime(day.dt)}</p>
             <p>{day.weather[0].description}</p>
           </div>
         ))}
@@ -37,3 +42,7 @@ const WeatherDisplay = ({ weatherData, forecastData }) => {
 };
 
 export default WeatherDisplay;
+
+
+
+
