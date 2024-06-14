@@ -49,5 +49,5 @@ npm run dev
 
 This will start the development server on http://localhost:3000.
 
-#API Key
+## API Key
 To obtain an API key for OpenWeatherMap, visit OpenWeatherMap API and sign up for a free account.
