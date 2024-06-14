@@ -25,7 +25,7 @@ This Weather Dashboard application allows users to search for weather informatio
 
 ```
 bash
-git clone https://github.com/your-username/weather-dashboard.git
+git clone https://github.com/your-username/Weather-Dashboard.git
 cd weather-dashboard
 ```
 
