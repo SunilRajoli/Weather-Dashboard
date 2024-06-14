@@ -24,7 +24,6 @@ This Weather Dashboard application allows users to search for weather informatio
 1. Clone the repository:
 
 ```
-bash
 git clone https://github.com/your-username/Weather-Dashboard.git
 cd weather-dashboard
 ```
@@ -32,7 +31,6 @@ cd weather-dashboard
 2. Install dependencies:
 
 ```
-bash
 npm install
 ```
 
@@ -40,14 +38,12 @@ npm install
 Create a .env file in the root directory with the following:
 
 ```
-bash
 NEXT_PUBLIC_OPENWEATHERMAP_API_KEY=your_openweathermap_api_key
 ```
 Replace `your_openweathermap_api_key` with your actual OpenWeatherMap API key.
 
 4. Start the development server:
 ```
-bash
 npm run dev
 ```
 
